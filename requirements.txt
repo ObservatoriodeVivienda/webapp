@@ -5,7 +5,7 @@ psycopg2==2.5.1
 static==0.4
 wsgiref==0.1.2
 Python >= 2
-Django == 1.7
+Django == 1.8.1
 Pillow >= 2.0.0
 django-mptt >= 0.5.1
 django-tagging >= 0.3.6
