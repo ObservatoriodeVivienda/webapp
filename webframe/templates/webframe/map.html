@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block imgheader %}
+{% endblock %}
+
+{% block navbar %}
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" style="font-size:13px" href="/#page-top">Observatorio de Vivienda</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="/#page-top">Home</a>
+                </li>
+
+                <li>
+                    <a class="page-scroll" href="/#about">Objetivo</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/proceso">Proceso</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+
+
+    <!-- /.container-fluid -->
+</nav>
+{% endblock %}
+
+
+{% block body %}
+
+<div style="margin-top:100px">
+<center><font color="#f05f40"><h2>Mapeo de Variables:</h2></font>
+</div>
+    <div>
+        <div id="explain" class="col-xs-12 col-lg-4" >
+        </div>
+
+        <div id="map" class="col-xs-12 col-lg-8" >
+
+			<iframe width="100%" height="520" frameborder="0" src="https://observatoriodevivienda.cartodb.com/viz/3669c21a-7617-11e5-ab50-0e5db1731f59/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+		</div>
+	</div>
+</center>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block javascript %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$("#cartodb-text").remove()
+
+	</script>
+
+    <script type="text/javascript">
+        $("#contact").css("background","rgb(245,245,245) !important")
+    </script>
+{% endblock %}

@@ -1,0 +1,190 @@
+{% load staticfiles %}
+
+<!--example: <img src="{% static "compareconstitutions/myexample.jpg" %}" alt="My image"/>
+-->
+
+<!DOCTYPE html>
+<html style="overflow-x:hidden">
+    <head>
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="{% static "compareconstitutions/css/bootstrap.min.css"%}" type="text/css">
+
+        <!-- Custom Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="{% static "compareconstitutions/font-awesome/css/font-awesome.min.css"%}" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" href="{% static "compareconstitutions/css/animate.min.css"%}" type="text/css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static "compareconstitutions/css/creative.css"%}" type="text/css">
+        <title>Observatorio de Vivienda</title>
+        <meta name="description" content="">
+
+
+        {% block extrasrc %}
+        {% endblock %}
+
+    </head>
+
+  
+<body>
+
+    <!--Header--> 
+    {% block imgheader %}
+        <header style='background-image:url("{% static "compareconstitutions/img/header.jpg"%}");'>
+            <div class="header-content">
+                <div id="Home" class="header-content-inner">
+                    <h1>Observatorio de Vivienda</h1>
+                </div>
+            </div>
+        </header>
+    {% endblock %}
+
+
+
+    <!--NavBar--> 
+    {% block navbar %}
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand page-scroll" style="font-size:13px" href="/#page-top">Observatorio de Vivienda</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a class="page-scroll" href="#page-top">Home</a>
+                      </li>
+
+                      <li>
+                          <a class="page-scroll" href="#about">Objetivo</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="/proceso/">Proceso</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#contact">Contáctanos</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+      <!--NAV BAR-->
+    {% endblock %}
+
+
+
+
+    <head>
+
+        <title>Iniciativa Observatorio de Vivienda</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="{% static "compareconstitutions/css/bootstrap.min.css"%}" type="text/css">
+
+        <!-- Custom Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static "compareconstitutions/font-awesome/css/font-awesome.min.css"%}" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" href="{% static "compareconstitutions/css/animate.min.css"%}" type="text/css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static "compareconstitutions/css/creative.css"%}" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+
+{% block body %}
+
+{% endblock %}
+
+
+
+<footer class="site-footer" style="float:left;width:100%">
+          <section id="contact">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2 text-center">
+                          <h2 class="section-heading">Contáctanos</h2>
+                          <hr class="primary">
+                          <p>Si tienes algún comentario, te gustaría participar o saber más del proyecto mándanos un correo</p>
+                      </div>
+                      <!--<div classt ="col-lg-4 col-lg-offset-2 text-center">
+                          <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                          <p>0445534661116</p>
+                      </div>-->
+                      <div class="container text-center">
+                          <p><a href="mailto:observatoriodevivienda@gmail.com">observatoriodevivienda@gmail.com</a>
+                          </p>
+                          <p>
+                          <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                          </p> 
+                      </div>
+                  </div>
+              </div>
+          </section>
+</footer>
+
+
+</body>
+
+
+
+<!-- jQuery -->
+<script src="{% static "compareconstitutions/js/jquery.js"%}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static "compareconstitutions/js/bootstrap.min.js"%}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{% static "compareconstitutions/js/jquery.easing.min.js"%}"></script>
+<script src="{% static "compareconstitutions/js/jquery.fittext.js"%}"></script>
+<script src="{% static "compareconstitutions/js/wow.min.js"%}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{% static "compareconstitutions/js/creative.js"%}"></script>
+
+<!-- Read More-->
+<script src="{% static "compareconstitutions/lib/billboard/readmore.min.js"%}"></script>
+<script type="text/javascript" src="{% static "compareconstitutions/lib/scroll/jquery.scrollTo.min.js"%}"></script>
+
+<!--Ajax-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+{% block javascript %}
+{% endblock %}
+
+
+
+
+</html>

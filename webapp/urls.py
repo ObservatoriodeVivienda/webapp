@@ -1,5 +1,4 @@
-"""webapp URL Configuration
-
+"""
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
 Examples:
@@ -22,9 +21,8 @@ from zinnia.sitemaps import AuthorSitemap
 from django.conf.urls import patterns, include, url, static
 from django.conf import settings
 from django.conf.urls.static import static
+
 admin.autodiscover()
-
-
 sitemaps = {'tags': TagSitemap,
             'blog': EntrySitemap,
             'authors': AuthorSitemap,
@@ -50,6 +48,13 @@ blog_urls = [
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$','webframe.views.index'),
+    url(r'^proceso/$','webframe.views.proceso'),
+    url(r'^compareconstitutions$','webframe.views.compareconstitutions'),
+    url(r'^busqueda_ajax/$','webframe.views.get_new_data'),
+    url(r'^projects/$','webframe.views.projects'),
+    url(r'^map/$','webframe.views.map'),
+    url(r'^directory/$','webframe.views.directory'),
     url(r'^weblog/', include('zinnia.urls', namespace='zinnia')),
     url(r'^comments/', include('django_comments.urls')),
     #url(r'^', include(blog_urls, namespace='zinnia')),
