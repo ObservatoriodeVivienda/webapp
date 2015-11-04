@@ -7,19 +7,19 @@ from django.http import HttpResponse
 import json
 
 def index(request,):
-    return render_to_response("webframe/index.html")
+    return render_to_response("compareconstitutions/index.html")
 
 def proceso(request,):
-    return render_to_response("webframe/proceso.html")
+    return render_to_response("compareconstitutions/proceso.html")
 
 def map(request,):
-    return render_to_response("webframe/map.html")
+    return render_to_response("compareconstitutions/map.html")
 
 def directory(request,):
-    return render_to_response("webframe/directory.html")
+    return render_to_response("compareconstitutions/directory.html")
 
 def projects(request,):
-    return render_to_response("webframe/projects.html")
+    return render_to_response("compareconstitutions/projects.html")
 
 
 def compareconstitutions(request,):
@@ -38,7 +38,7 @@ def compareconstitutions(request,):
         print type(const_dict)
     except Exception as e:
         print e
-    return render_to_response("webframe/compareconstitutions.html", 
+    return render_to_response("compareconstitutions/compareconstitutions.html", 
         {"unique_tag":unique_tag,"unique_country":unique_country})
 
 

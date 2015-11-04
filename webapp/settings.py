@@ -43,6 +43,7 @@ INSTALLED_APPS = (
   'tagging',
   'zinnia',
   'django.contrib.sitemaps',
+  'compareconstitutions',
 )
 
 MIDDLEWARE_CLASSES = (
