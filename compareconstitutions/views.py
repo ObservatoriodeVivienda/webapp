@@ -22,6 +22,9 @@ def projects(request,):
     return render_to_response("compareconstitutions/projects.html")
 
 
+def aboutus(request,):
+    return render_to_response("compareconstitutions/aboutus.html")
+
 def compareconstitutions(request,):
     try:
         client = pymongo.MongoClient('ds033484.mongolab.com:33484')
