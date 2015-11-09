@@ -41,7 +41,7 @@
     <!--Header--> 
     {% block imgheader %}
         <header style='background-image:url("{% static "compareconstitutions/img/header.jpg"%}");'>
-            <div class="header-content">
+            <div class="header-content" style="margin-top:3%;">
                 <div id="Home" class="header-content-inner">
                     <h1>Observatorio de Vivienda</h1>
                 </div>
@@ -53,23 +53,23 @@
 
     <!--NavBar--> 
     {% block navbar %}
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" >
 
           <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
 
-              <div class="navbar-header">
+              <div class="navbar-header" >
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand page-scroll" style="font-size:13px" href="/#page-top">Observatorio de Vivienda</a>
+                  <a class="navbar-brand page-scroll"  style="font-size:13px" href="/#page-top">Observatorio de Vivienda</a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="animated bounceInLeft"  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                       <li>
                           <a class="page-scroll" href="#page-top">Home</a>
@@ -101,6 +101,8 @@
     <head>
 
         <title>Iniciativa Observatorio de Vivienda</title>
+
+        <script src="https://cdn.jsdelivr.net/animatecss/3.4.0/animate.min.css"></script>
 
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="{% static "compareconstitutions/css/bootstrap.min.css"%}" type="text/css">
