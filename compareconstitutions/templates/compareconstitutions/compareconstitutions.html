@@ -33,7 +33,7 @@
 
 {% block body %}
 <div style="margin-top:100px">
-    <center><font color="orange"><h2>Pre-alpha version "development release"</h2></font><font color="#f05f40"><h2>Comparative Law Project:</h2></font>
+    <center><font color="orange"><h2>Pre-alpha version "development release"</h2></font><font color="#f05f40"><h2>Proyecto de Derecho Comparado:</h2></font>
 </div>
     <div>
         <div id="compare-filter" class="col-xs-12 col-lg-4" >
@@ -45,7 +45,7 @@
             <div  class="container-fluid"> 
             <div style="width:99%;padding-top:10px;padding-bottom:10px;margin-top:50px; text-align: center; font: 12px sans-serif; border: 1px; border-radius: 1px; font: 14px/16px Arial, Helvetica, sans-serif; background: rgb(192,192,192,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;">
 
-            <h3 style="color:#f05f40;">Housing Rights Legislation</h3>
+            <h3 style="color:#f05f40;">Legislación</h3>
             <h4>Select at least one:</h4><br>
 
 
@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="col-xs-3 control-label" style="color:#f05f40;margin-left:10%">Country</label>
+                        <label class="col-xs-3 control-label" style="color:#f05f40;margin-left:10%">País</label>
                         <div class="col-xs-5" >
                             <select id="country" multiple="multiple">
                                 {%for each in unique_country%}
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-xs-3 control-label" style="color:#f05f40;margin-left:10%;">Subject</label>
+                        <label class="col-xs-3 control-label" style="color:#f05f40;margin-left:10%;">Tema</label>
                         <div class="col-xs-5">
                             <select id="tag" multiple="multiple" style="overflow-x: hidden;overflow-y: scroll;">
                                     {%for tag in unique_tag%}
@@ -161,7 +161,7 @@
         $('#tag').multiselect();
         $('#country').multiselect();
         $('#type').multiselect({
-          nonSelectedText: 'Not Yet Available',
+          nonSelectedText: 'Not Available',
             });
         });
 
